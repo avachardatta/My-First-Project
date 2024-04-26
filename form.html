@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="file"] {
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>College Admission Form</h2>
+    <form action="submit.php" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        
+        <label for="program">Program:</label><br>
+        <select id="program" name="program" required>
+            <option value="">Select</option>
+            <option value="bsc">B.Sc</option>
+            <option value="ba">B.A</option>
+            <option value="btech">B.Tech</option>
+        </select><br>
+        
+        <label for="semester">Semester:</label><br>
+        <input type="number" id="semester" name="semester" min="1" required><br>
+        
+        <label for="gpa">GPA:</label><br>
+        <input type="text" id="gpa" name="gpa" required><br>
+        
+        <label for="upload">Upload Documents:</label><br>
+        <input type="file" id="upload" name="upload"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
