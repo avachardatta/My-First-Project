@@ -2,16 +2,28 @@
 public class Main
 {
 
+
     public static void main(String[] args) {
         
-        System.out.println("Hello World");
-        System.out.println("I Am Learning Java");
-        System.out.println("It is Awesome");
-        System.out.println(3);
-        System.out.println(358);
-        System.out.println(54654654);
-        System.out.println(3+5);
-        System.out.println(2*4);
+        System.out.println("Hello Everyone");
+
+        String name = "Dominic Torretto";
+        System.out.println("Name : " + name);
+
+        int age = 25;
+        System.out.println("Age : " + age);
+
+
+        String course = "Java Development";
+        System.out.println("Course : " + course);
+
+
+        char grade = 'A';
+        System.out.println("Grade : " + grade);
+
+        
+
+
 
 
     }
