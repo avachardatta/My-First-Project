@@ -5,35 +5,15 @@ public class abc {
     
 
     public static void main(String[] args) {
-        
-    
-        //    byte; ----------- 1 byte
-        //    boolean;----------1 byte
-        //    char;-------------2 byte
-        //    short;------------2 byte
-        //    int;--------------4 byte
-        //    float;------------4 byte
-        //    long;-------------8 byte
-        //    double;-----------8 byte
-        
 
-            int a = 15;
-            System.out.println("Int Value : " + a);
+        int arr [];
+        arr = new int [2];
+        arr[0] = 0;
+        arr[1] = 1;
+        // arr[2] = 20;
 
-            float b = a;
-            System.out.println("Float Value : " + b);
-
-            double c = b;
-            System.out.println("Long Value " + c);
-
-
-
-
-
-
-        
-
-
+            System.out.println(arr);
+           System.out.println(arr[0]);
 
 
 
