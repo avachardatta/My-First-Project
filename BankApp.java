@@ -9,31 +9,22 @@ public class BankApp {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to HDFC Bank");
-        System.out.println("Enter Your Name");
-
+        System.out.print("Enter Your Name: ");
         String name = sc.nextLine();
-        System.out.println("Enter Account Number");
 
+        System.out.print("Enter Account Number: ");
         String accNumber = sc.next();
 
-        // Initialise Balance
-
-        System.out.println("Enter intial deposit amount");
-
+        System.out.print("Enter Initial Deposit Amount: ");
         double initialDeposit = sc.nextDouble();
 
-
-        // creating an encapsulated bank account
-
+        // Create Encapsulated BankAccount
         BankAccount account = new BankAccount(name, accNumber, initialDeposit);
-        double initialDeposit = sc.nextDouble();
-
-        // Banking App
 
         int choice;
         do {
-            System.out.println("Banking Menu");
-            System.out.println("1.Deposit");
+            System.out.println("\n--- Banking Menu ---");
+            System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Check Balance");
             System.out.println("4. Account Details");
@@ -44,49 +35,42 @@ public class BankApp {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Enter deposit Amount : ");
+                    System.out.print("Enter deposit amount: ");
                     double depositAmount = sc.nextDouble();
                     account.deposit(depositAmount);
-                break;
-            
+                    break;
+
                 case 2:
-                    System.out.println("Enter withdrwal Amount");
-                    double depositAmount = sc.nextDouble();
+                    System.out.print("Enter withdrawal amount: ");
+                    double withdrawAmount = sc.nextDouble();
                     account.withdraw(withdrawAmount);
-                break;
+                    break;
 
-                case 3 :
-                    System.out.println("Your Current Balance is : " + account.getBalance());
-                break;
+                case 3:
+                    System.out.println("Your Current Balance: ₹" + account.getBalance());
+                    break;
 
-                case 4 :
+                case 4:
                     account.displayAccountInfo();
-                break;
+                    break;
 
-                case 5: 
-                    System.out.println("Thank u for banking with us");
-                break;
+                case 5:
+                    System.out.println("Thank you for banking with us!");
+                    break;
 
-                default :
-                    System.out.println("Invalid choice . Please try again later");
-
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
             }
-            while (condition != 5);
-            
-            sc.close();
+        } while (choice != 5);
 
-        }
+        sc.close();
 
 
 
 
 
     }
-
-
-
-
-
 
 
 

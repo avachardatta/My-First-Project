@@ -1,28 +1,28 @@
-import lombok.Getter;
-import lombok.Setter;
+// import lombok.Getter;
+// import lombok.Setter;
 
 
 // this is use for getter and setter this are anotations
 
-@Getter
-@Setter
+// @Getter
+// @Setter
 
 // Encapsilation Example
 
 public class BankAccount {
 
-    private String accountHolder;  
-    private String accountNumber;
+    private String name;  
+    private String accNumber;
     private double balance;
 
 
 
 
-    public BankAccount(String accountHolder,String accountNumber,double balance) // Constructor 
+    public BankAccount(String name,String accNumber,double balance) // Constructor 
     {
 
-        this.accountHolder = accountHolder;
-        this.accountNumber = accountNumber;
+        this.name = name;
+        this.accNumber = accNumber;
         this.balance = balance;
 
     }
@@ -31,12 +31,12 @@ public class BankAccount {
 
 public String getAccountHolder()
 {
-    return accountHolder;
+    return name;
 }
 
 public String getAccountNumber()
 {
-    return accountNumber;
+    return accNumber;
 }
 
 public double getBalance()
@@ -76,12 +76,10 @@ public void withdraw(double amount)
 public void displayAccountInfo()
 {
     System.out.println("Account details");
-    System.out.println("Account Holder : " + accountHolder);
-    System.out.println("Account Number : " + accountNumber);
-    System.out.println(Current Balance: ₹ " + balance);
+    System.out.println("Account Holder : " + name);
+    System.out.println("Account Number : " + accNumber);
+    System.out.println("Current Balance: ₹ " + balance);
 }
-
-
 
 
 
