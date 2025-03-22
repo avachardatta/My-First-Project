@@ -182,28 +182,49 @@ public static void main(String [] args)
   // }
 
 
-  int a [] = { 10,20,30,40,50,60,70};
+//   int a [] = { 10,20,30,40,50,60,70};
 
-  for( int b : a){
-    System.out.println("Value of A : " + b);
+//   for( int b : a){
+//     System.out.println("Value of A : " + b);
+//   }
+
+//   int [] emp_id = new int[5];
+
+//   emp_id[0] = 1001;
+//   emp_id[1] = 1002;
+//   emp_id[2] = 1003;
+//   emp_id[3] = 1004;
+//   emp_id[4] = 1005;
+  
+//  for(int details : emp_id)
+//  {
+//   System.out.println("List of Emp Id " + details );
+//  }
+
+//  System.out.println("Dominic Emp_id : " + emp_id[0]);
+
+
+
+
+  for( int i = 1; i<=5; i++)
+  {
+    for( int j = 1; j<=i; j++)
+    {
+      System.out.print("*");
+
+    }
+    
+    System.out.println();
   }
 
-  int [] emp_id = new int[5];
 
-  emp_id[0] = 1001;
-  emp_id[1] = 1002;
-  emp_id[2] = 1003;
-  emp_id[3] = 1004;
-  emp_id[4] = 1005;
-  
- for(int details : emp_id)
- {
-  System.out.println("List of Emp Id " + details );
- }
-
- System.out.println("Dominic Emp_id : " + emp_id[0]);
-
-
+  // for ( int i = 1; i<=5; i++)
+  // {
+  //   for( int j = 1; j<=i; j++)
+  //   {
+      
+  //   }
+  // }
 
 
 
