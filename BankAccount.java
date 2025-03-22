@@ -1,3 +1,8 @@
+
+
+// Encapsilation 
+// Bank Project
+
 public class BankAccount {
 
     private String name;  
